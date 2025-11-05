@@ -1,8 +1,8 @@
 export default function Button({active, setActive, curr}) {
   return (
     <button
-      className={`btn my-20 ${active?.id === curr.id ? "active-btn" : ""} `}
-      onClick={() => setActive((current) => (current = curr))}
+      className={`btn my-20 ${active ? "active-btn" : ""} `}
+      onClick={setActive}
     >
       {curr.title}
     </button>
