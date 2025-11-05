@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Button from "./Button";
+import Card from "./card";
 
 export default function Main({ buttonsArray }) {
   const [activeBtn, setActiveBtn] = useState(null);
@@ -12,12 +13,7 @@ export default function Main({ buttonsArray }) {
             <Button key={btn.id} active={activeBtn} setActive={setActiveBtn} curr={btn}/>
           ))}
         </div>
-        <div className="box my-20">
-          <h4 className="mb-10">
-            {activeBtn ? activeBtn.title : "Nessun linguaggio selezionato"}
-          </h4>
-          <p>{activeBtn ? activeBtn.description : ""}</p>
-        </div>
+        <Card active={activeBtn}/>
       </div>
     </main>
   );
