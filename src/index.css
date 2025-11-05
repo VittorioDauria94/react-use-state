@@ -1,0 +1,64 @@
+/* Custom Properties */
+:root {
+  /* === COLORS === */
+  --clr-gray: rgb(228, 227, 227);
+}
+
+
+/* CSS Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Layout */
+.container {
+  max-width: 1100px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+/* Utility */
+
+.flex {
+  display: flex;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.py-20 {
+  padding: 20px 0;
+}
+
+.my-20 {
+  margin: 20px 0;
+}
+
+/* Header */
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: var(--clr-gray);
+}
